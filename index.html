@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Picker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-primary">🎨 RGB Color Picker</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group mb-3">
+                            <label for="red" class="form-label text-danger">Red: <span id="red-value">128</span></label>
+                            <input type="range" class="form-range" id="red" min="0" max="255" value="128">
+                            <input type="number" class="form-control mt-2" id="red-input" min="0" max="255" value="128">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="green" class="form-label text-success">Green: <span id="green-value">128</span></label>
+                            <input type="range" class="form-range" id="green" min="0" max="255" value="128">
+                            <input type="number" class="form-control mt-2" id="green-input" min="0" max="255" value="128">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="blue" class="form-label text-primary">Blue: <span id="blue-value">128</span></label>
+                            <input type="range" class="form-range" id="blue" min="0" max="255" value="128">
+                            <input type="number" class="form-control mt-2" id="blue-input" min="0" max="255" value="128">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="color-box" id="color-box"></div>
+                <p class="text-center mt-3">Hex Code: <span id="hex-code">#808080</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
